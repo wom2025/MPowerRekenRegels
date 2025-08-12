@@ -612,6 +612,7 @@ def on_any_change(n_reset, meta_rows, cond_rows, imported_rows):
     report = "✔️ Geen correcties nodig." if not notes else "⚠️ " + "  •  ".join(notes)
 
     return df_meta.to_dict("records"), df_cond.to_dict("records"), graphs, report, first_rule_str
-
+server = app.server
 if __name__ == "__main__":
-    app.run_server(host="0.0.0.0", port=8050)
+    import os
+    app.run_server(host="0.0.0.0", port=int(os.environ.get("PORT", 8050)), debug=False)
