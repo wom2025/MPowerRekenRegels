@@ -1,1 +1,1 @@
-web: gunicorn MPowerRekenRegel:app
+web: gunicorn MPowerRekenRegel:server
