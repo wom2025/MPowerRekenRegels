@@ -42,9 +42,9 @@ YRANGE_PWR   = (0, 1000)            # kW
 RANGES = {
     "Imbal_Grens": (-500.0, 500.0),
     "SI_Grens": (-400000.0, 400000.0),
-    "Power_Grens": (0.0, 2000.0),
+    "Power_Grens": (0.0, 5000.0),
     "Tijd": (0.0, 60.0),
-    "Vermogen": (-4000.0, 4000.0),
+    "Vermogen": (-5000.0, 5000.0),
 }
 VALID_TYPES = {"1'", "15'"}
 VALID_OPS = {"<", ">"}
